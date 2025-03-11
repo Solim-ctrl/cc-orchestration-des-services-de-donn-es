@@ -1,0 +1,27 @@
+
+services:
+  eshop-ms-membership:
+    build:
+      context: .  # La racine du projet
+      dockerfile: Dockerfile.membership  # Utiliser ce Dockerfile pour le service Membership
+    ports:
+      - "8081:8080"  # Mappe le port du service Membership
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+    networks:
+      - eshop-network
+
+  eshop-ms-basket:
+    build:
+      context: .  # La racine du projet
+      dockerfile: Dockerfile.basket  # Utiliser ce Dockerfile pour le service Basket
+    ports:
+      - "8082:8080"  # Mappe le port du service Basket
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+    networks:
+      - eshop-network
+
+networks:
+  eshop-network:
+    driver: bridge

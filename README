@@ -1,0 +1,15 @@
+# Eshop Microservices
+Ce projet inclut deux microservices :
+- **eshop-ms-membership** : Gestion des utilisateurs et authentification via JWT
+- **eshop-ms-basket** : Gestion des paniers, sécurisé avec JWT
+
+## Prérequis
+- Docker
+- Docker Compose
+
+## Installation
+1. Clonez le repository
+2. Build les images Docker
+   ```bash
+   docker build -t eshop-ms-membership .
+   docker build -t eshop-ms-basket .

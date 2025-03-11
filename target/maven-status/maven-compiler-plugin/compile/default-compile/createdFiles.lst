@@ -1,0 +1,9 @@
+org\example\MembershipServiceApplication.class
+eshop\ms\membership\controller\UserController.class
+org\example\BasketServiceApplication.class
+ehs\ms\basket\model\Item.class
+eshop\ms\basket\controller\JwtUtil.class
+eshop\ms\basket\controller\BasketController.class
+eshop\ms\membership\model\User.class
+ehs\ms\basket\model\Basket.class
+eshop\ms\membership\model\LoginRequest.class
